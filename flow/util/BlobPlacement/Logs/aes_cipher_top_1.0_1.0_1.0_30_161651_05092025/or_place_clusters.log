@@ -1,0 +1,111 @@
+OpenROAD v2.0-9834-g36bd481 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /home/memzfs_projects/BlobPlacement/sakundu/BlobPlacement/blob_runs/aes_cipher_top_1.0_1.0_1.0_30_161651_05092025/aes_cipher_top_cluster.lef
+[INFO ODB-0223]     Created 22 technology layers
+[INFO ODB-0224]     Created 27 technology vias
+[INFO ODB-0225]     Created 62 library cells
+[INFO ODB-0226] Finished LEF file:  /home/memzfs_projects/BlobPlacement/sakundu/BlobPlacement/blob_runs/aes_cipher_top_1.0_1.0_1.0_30_161651_05092025/aes_cipher_top_cluster.lef
+[INFO ODB-0127] Reading DEF file: /home/memzfs_projects/BlobPlacement/sakundu/BlobPlacement/blob_runs/aes_cipher_top_1.0_1.0_1.0_30_161651_05092025/aes_cipher_top_cluster.def
+[INFO ODB-0128] Design: aes_cipher_top
+[WARNING ODB-0124] warning: Polygon DIEAREA statement not supported.  The bounding box will be used instead
+[INFO ODB-0130]     Created 388 pins.
+[INFO ODB-0131]     Created 62 components and 2400 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 0 connections.
+[INFO ODB-0133]     Created 970 nets and 2400 connections.
+[INFO ODB-0134] Finished DEF file: /home/memzfs_projects/BlobPlacement/sakundu/BlobPlacement/blob_runs/aes_cipher_top_1.0_1.0_1.0_30_161651_05092025/aes_cipher_top_cluster.def
+[INFO GPL-0002] DBU: 2000
+[INFO GPL-0003] SiteSize: 380 2800
+[INFO GPL-0004] CoreAreaLxLy: 20140 22400
+[INFO GPL-0005] CoreAreaUxUy: 479940 481600
+[INFO GPL-0006] NumInstances: 62
+[INFO GPL-0007] NumPlaceInstances: 62
+[INFO GPL-0008] NumFixedInstances: 0
+[INFO GPL-0009] NumDummyInstances: 0
+[INFO GPL-0010] NumNets: 970
+[INFO GPL-0011] NumPins: 2788
+[INFO GPL-0012] DieAreaLxLy: 0 0
+[INFO GPL-0013] DieAreaUxUy: 499700 501200
+[INFO GPL-0014] CoreAreaLxLy: 20140 22400
+[INFO GPL-0015] CoreAreaUxUy: 479940 481600
+[INFO GPL-0016] CoreArea: 211140160000
+[INFO GPL-0017] NonPlaceInstsArea: 0
+[INFO GPL-0018] PlaceInstsArea: 97801846928
+[INFO GPL-0019] Util(%): 46.32
+[INFO GPL-0020] StdInstsArea: 2931316368
+[INFO GPL-0021] MacroInstsArea: 94870530560
+[INFO GPL-0031] FillerInit: NumGCells: 192
+[INFO GPL-0032] FillerInit: NumGNets: 970
+[INFO GPL-0033] FillerInit: NumGPins: 2788
+[INFO GPL-0023] TargetDensity: 1.00
+[INFO GPL-0024] AveragePlaceInstArea: 1577449144
+[INFO GPL-0025] IdealBinArea: 1577449088
+[INFO GPL-0026] IdealBinCnt: 133
+[INFO GPL-0027] TotalBinArea: 211140160000
+[INFO GPL-0028] BinCnt: 8 8
+[INFO GPL-0029] BinSize: 57475 57400
+[INFO GPL-0030] NumBins: 64
+[INFO GPL-0002] DBU: 2000
+[INFO GPL-0003] SiteSize: 380 2800
+[INFO GPL-0004] CoreAreaLxLy: 20140 22400
+[INFO GPL-0005] CoreAreaUxUy: 479940 481600
+[INFO GPL-0006] NumInstances: 62
+[INFO GPL-0007] NumPlaceInstances: 62
+[INFO GPL-0008] NumFixedInstances: 0
+[INFO GPL-0009] NumDummyInstances: 0
+[INFO GPL-0010] NumNets: 970
+[INFO GPL-0011] NumPins: 2788
+[INFO GPL-0012] DieAreaLxLy: 0 0
+[INFO GPL-0013] DieAreaUxUy: 499700 501200
+[INFO GPL-0014] CoreAreaLxLy: 20140 22400
+[INFO GPL-0015] CoreAreaUxUy: 479940 481600
+[INFO GPL-0016] CoreArea: 211140160000
+[INFO GPL-0017] NonPlaceInstsArea: 0
+[INFO GPL-0018] PlaceInstsArea: 97801846928
+[INFO GPL-0019] Util(%): 46.32
+[INFO GPL-0020] StdInstsArea: 2931316368
+[INFO GPL-0021] MacroInstsArea: 94870530560
+[InitialPlace]  Iter: 1 CG residual: 0.00000007 HPWL: 283933890
+[InitialPlace]  Iter: 2 CG residual: 0.00000011 HPWL: 202175928
+[InitialPlace]  Iter: 3 CG residual: 0.00000009 HPWL: 201963876
+[InitialPlace]  Iter: 4 CG residual: 0.00000005 HPWL: 201817708
+[InitialPlace]  Iter: 5 CG residual: 0.00000007 HPWL: 201731409
+[INFO GPL-0031] FillerInit: NumGCells: 156
+[INFO GPL-0032] FillerInit: NumGNets: 970
+[INFO GPL-0033] FillerInit: NumGPins: 2788
+[INFO GPL-0023] TargetDensity: 0.73
+[INFO GPL-0024] AveragePlaceInstArea: 1577449144
+[INFO GPL-0025] IdealBinArea: 2156151296
+[INFO GPL-0026] IdealBinCnt: 97
+[INFO GPL-0027] TotalBinArea: 211140160000
+[INFO GPL-0028] BinCnt: 256 256
+[INFO GPL-0029] BinSize: 1797 1794
+[INFO GPL-0030] NumBins: 65536
+[NesterovSolve] Iter: 1 overflow: 0.682237 HPWL: 163949404
+[NesterovSolve] Iter: 10 overflow: 0.388768 HPWL: 212314695
+[NesterovSolve] Iter: 20 overflow: 0.408224 HPWL: 232381817
+[NesterovSolve] Iter: 30 overflow: 0.50851 HPWL: 243340280
+[NesterovSolve] Iter: 40 overflow: 0.517288 HPWL: 245428232
+[NesterovSolve] Iter: 50 overflow: 0.517475 HPWL: 245648209
+[NesterovSolve] Iter: 60 overflow: 0.517308 HPWL: 245610290
+[NesterovSolve] Iter: 70 overflow: 0.517501 HPWL: 245481319
+[NesterovSolve] Iter: 80 overflow: 0.517381 HPWL: 245541204
+[NesterovSolve] Iter: 90 overflow: 0.517238 HPWL: 245606103
+[NesterovSolve] Iter: 100 overflow: 0.517046 HPWL: 245611614
+[NesterovSolve] Iter: 110 overflow: 0.516728 HPWL: 245598765
+[NesterovSolve] Iter: 120 overflow: 0.516393 HPWL: 245640153
+[NesterovSolve] Iter: 130 overflow: 0.515415 HPWL: 245718909
+[NesterovSolve] Iter: 140 overflow: 0.513179 HPWL: 245821956
+[NesterovSolve] Iter: 150 overflow: 0.510617 HPWL: 245983916
+[NesterovSolve] Iter: 160 overflow: 0.505034 HPWL: 246274322
+[NesterovSolve] Iter: 170 overflow: 0.494528 HPWL: 246619180
+[NesterovSolve] Iter: 180 overflow: 0.468746 HPWL: 247268346
+[NesterovSolve] Iter: 190 overflow: 0.402628 HPWL: 247655752
+[NesterovSolve] Iter: 200 overflow: 0.323805 HPWL: 245861625
+[NesterovSolve] Iter: 210 overflow: 0.283019 HPWL: 241661240
+[NesterovSolve] Iter: 220 overflow: 0.241231 HPWL: 242011241
+[NesterovSolve] Iter: 230 overflow: 0.200136 HPWL: 244152081
+[NesterovSolve] Iter: 240 overflow: 0.171185 HPWL: 244844846
+[NesterovSolve] Iter: 250 overflow: 0.15258 HPWL: 245447834
+[NesterovSolve] Finished with Overflow: 0.148704
+Global Placement runtime: 2
