@@ -24,10 +24,10 @@ if {$::env(GPL_TIMING_DRIVEN)} {
 if {[info exists ::env(GPL_BLOB_PLACEMENT)]} {
   lappend global_placement_args -incremental
   ## Run blob placement flow
-  source /home/memzfs_projects/BlobPlacement/sakundu/BlobPlacement/Scripts/gen_graph_or.tcl
+  source ./util/BlobPlacement/Scripts/gen_graph_or.tcl
   write_graph_or
   set DBU [[ord::get_db_block] getDbUnitsPerMicron]
-  set fullCmd "/home/memzfs_projects/BlobPlacement/sakundu/BlobPlacement/Scripts/gen_seeded_placement.sh 1.0 30 1.0 $DBU | tee $::env(LOG_DIR)/blob_run.log"
+  set fullCmd "./util/BlobPlacement/Scripts/gen_seeded_placement.sh 1.0 30 1.0 $DBU | tee $::env(LOG_DIR)/blob_run.log"
   puts "Running blob placement script: $fullCmd"
   if {[catch {exec sh -c $fullCmd} output]} {
     # script exited with non‑zero status; output holds both stdout+stderr
