@@ -607,8 +607,7 @@ klayout_guides: $(RESULTS_DIR)/5_route.def $(OBJECTS_DIR)/klayout.lyt
 .PHONY: finish
 finish: $(LOG_DIR)/6_report.log \
         $(RESULTS_DIR)/6_final.v \
-        $(RESULTS_DIR)/6_final.sdc \
-        $(GDS_FINAL_FILE)
+        $(RESULTS_DIR)/6_final.sdc
 	$(UNSET_AND_MAKE) elapsed
 
 .PHONY: elapsed
@@ -761,7 +760,7 @@ clean:
 
 .PHONY: clean_all
 clean_all: clean_synth clean_floorplan clean_place clean_cts clean_route clean_finish clean_metadata clean_abstract
-	rm -rf $(OBJECTS_DIR)
+	rm -rf $(OBJECTS_DIR) $(LOG_DIR) $(RESULTS_DIR) $(REPORTS_DIR)
 
 .PHONY: nuke
 nuke: clean_test clean_issues

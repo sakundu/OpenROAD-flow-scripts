@@ -20,6 +20,34 @@ if {$::env(GPL_TIMING_DRIVEN)} {
   }
 }
 
+## Enable BlobPlacement
+if {[info exists ::env(GPL_BLOB_PLACEMENT)]} {
+  lappend global_placement_args -incremental
+  ## Run blob placement flow
+  source /home/memzfs_projects/BlobPlacement/sakundu/BlobPlacement/Scripts/gen_graph_or.tcl
+  write_graph_or
+  set DBU [[ord::get_db_block] getDbUnitsPerMicron]
+  set fullCmd "/home/memzfs_projects/BlobPlacement/sakundu/BlobPlacement/Scripts/gen_seeded_placement.sh 1.0 30 1.0 $DBU | tee $::env(LOG_DIR)/blob_run.log"
+  puts "Running blob placement script: $fullCmd"
+  if {[catch {exec sh -c $fullCmd} output]} {
+    # script exited with non‑zero status; output holds both stdout+stderr
+    # extract the actual exit code
+    set exitStatus ""
+    if {[info exists errorCode]} {
+        # errorCode is e.g. "CHILDSTATUS pid status"
+        set exitStatus [lindex $errorCode 2]
+    }
+    puts stderr "Script failed (exit code $exitStatus):"
+    puts stderr $output
+  } else {
+    puts "Script completed successfully."
+    # if you want to see the logged output on stdout as well:
+    # puts $output
+  }
+  lappend global_placement_args "-incremental"
+  read_def -incremental "$::env(RESULTS_DIR)/$::env(DESIGN_NAME)_seeded.def"
+}
+
 proc do_placement {global_placement_args} {
   set all_args [concat [list -density [place_density_with_lb_addon] \
     -pad_left $::env(CELL_PAD_IN_SITES_GLOBAL_PLACEMENT) \
